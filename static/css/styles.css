@@ -1,0 +1,110 @@
+/* static/css/styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.candidate {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #3498db;
+}
+
+label {
+    font-size: 18px;
+    color: #666666;
+    cursor: pointer;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+p {
+    color: #555;
+}
+
+#progressMessage {
+    font-size: 14px;
+    color: #3498db;
+    margin-top: 10px;
+}
+
+.results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #34495e;
+}
+
+.zkp-info {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+.zkp-info h2 {
+    font-size: 20px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.zkp-info p {
+    margin: 8px 0;
+    color: #7f8c8d;
+}

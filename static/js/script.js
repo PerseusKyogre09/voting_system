@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const progressMessage = document.getElementById("progressMessage");
 
     voteForm.addEventListener("submit", function () {
-        progressMessage.textContent = "Submitting your encrypted vote...";
+        progressMessage.textContent = "Encrypting your vote securely... Please wait.";
     });
 });

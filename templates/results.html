@@ -11,14 +11,13 @@
     <div class="container">
         <h1>Election Results</h1>
         <div class="results">
-            <p>Candidate 1: {{ candidate_1_votes }} votes</p>
-            <p>Candidate 2: {{ candidate_2_votes }} votes</p>
+            <p><strong>Candidate 1:</strong> {{ candidate_1_votes }} votes</p>
+            <p><strong>Candidate 2:</strong> {{ candidate_2_votes }} votes</p>
         </div>
         <div class="zkp-info">
-            <h2>How Zero-Knowledge Proof (ZKP) Ensures Privacy:</h2>
-            <p>This voting system uses encryption to keep each vote private. Votes are encrypted immediately and verified without revealing their contents.</p>
-            <p>The results are tallied securely, and only the final count is revealed to maintain voter anonymity.</p>
-            <p>All encryption and verification happen behind the scenes, ensuring that the integrity of each vote is preserved without compromising privacy.</p>
+            <h2>Behind the Scenes: Zero-Knowledge Proof (ZKP)</h2>
+            <p>To protect voter privacy, each vote is encrypted using secure cryptography. Our system verifies votes without accessing the content, ensuring both privacy and accuracy.</p>
+            <p>Zero-Knowledge Proof (ZKP) guarantees that the tally process is both secure and transparent, preserving anonymity while confirming authenticity.</p>
         </div>
     </div>
 </body>
