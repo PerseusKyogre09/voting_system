@@ -1,8 +1,28 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1>Vote for Your Candidate</h1>
-<form method="POST">
-    <button name="candidate" value="candidate_1">Candidate 1</button>
-    <button name="candidate" value="candidate_2">Candidate 2</button>
-</form>
-{% endblock %}
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Voting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Candidate</h1>
+        <form id="voteForm" action="/" method="POST">
+            <div class="candidate">
+                <input type="radio" name="candidate" value="candidate_1" id="candidate_1" required>
+                <label for="candidate_1">Candidate 1</label>
+            </div>
+            <div class="candidate">
+                <input type="radio" name="candidate" value="candidate_2" id="candidate_2">
+                <label for="candidate_2">Candidate 2</label>
+            </div>
+            <button type="submit">Submit Vote</button>
+        </form>
+        <p id="progressMessage"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
