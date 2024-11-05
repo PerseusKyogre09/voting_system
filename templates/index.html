@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vote for Your Candidate</title>
+    <title>Vote for Your Favorite Candidate</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Vote for Your Favorite Candidate</h1>
-        <form id="voteForm" action="/" method="POST">
+        <form id="voteForm" action="{{ url_for('index') }}" method="POST">
             <div class="candidate">
+                <img src="{{ url_for('static', filename='images/tom.png') }}" alt="Candidate Tom" class="candidate-img">
                 <input type="radio" name="candidate" value="candidate_1" id="candidate_1" required>
-                <label for="candidate_1">Candidate 1</label>
+                <label for="candidate_1">Tom</label>
             </div>
             <div class="candidate">
+                <img src="{{ url_for('static', filename='images/jerry.jpeg') }}" alt="Candidate Jerry" class="candidate-img">
                 <input type="radio" name="candidate" value="candidate_2" id="candidate_2">
-                <label for="candidate_2">Candidate 2</label>
+                <label for="candidate_2">Jerry</label>
             </div>
-            <button type="submit">Submit Vote</button>
+            <button type="submit" class="submit-btn">Submit Vote</button>
         </form>
         <p id="progressMessage"></p>
     </div>
